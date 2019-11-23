@@ -12,7 +12,7 @@ import XCTest
 final class CommandsTests: XCTestCase {
     override func setUp() {
         super.setUp()
-        Commands.arguments = ["Commands", "-a", "hello"]
+        Commands.arguments = ["Commands", "-a", "hello", "--", "a.txt", "b.txt"]
     }
     
     func testHasOption() {
@@ -22,5 +22,9 @@ final class CommandsTests: XCTestCase {
     func testValue() {
         XCTAssertEqual(Commands.value(of: "a"), "hello")
         XCTAssertNil(Commands.value(of: "b"))
+    }
+
+    func testArray() {
+        XCTAssertEqual(Commands.array(), ["a.txt", "b.txt"])
     }
 }
