@@ -3,28 +3,62 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		ADA6A6E02388FFED00927164 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADA6A6DF2388FFED00927164 /* main.swift */; };
+		ADA6A6F22389021A00927164 /* words.txt in CopyFiles */ = {isa = PBXBuildFile; fileRef = ADA6A6E72389001200927164 /* words.txt */; };
+		ADA6A6F52389036600927164 /* Yams in Frameworks */ = {isa = PBXBuildFile; productRef = ADA6A6F42389036600927164 /* Yams */; };
+		ADA6A7162389072100927164 /* SpellCheckerCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ADA6A70D2389072100927164 /* SpellCheckerCore.framework */; };
+		ADA6A71D2389072100927164 /* SpellCheckerCore.h in Headers */ = {isa = PBXBuildFile; fileRef = ADA6A70F2389072100927164 /* SpellCheckerCore.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		ADA6A7252389073800927164 /* Commands.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADA6A6F7238904CF00927164 /* Commands.swift */; };
+		ADA6A7262389074700927164 /* CommandsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADA6A7062389066A00927164 /* CommandsTests.swift */; };
+		ADA6A727238907E500927164 /* WordsLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADA6A6E92389002B00927164 /* WordsLoader.swift */; };
+		ADA6A7292389080A00927164 /* String+extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADA6A6EC2389004500927164 /* String+extension.swift */; };
+		ADA6A72B2389089100927164 /* SpellCheckerCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ADA6A70D2389072100927164 /* SpellCheckerCore.framework */; };
+		ADA6A72D238908D500927164 /* WordsLoaderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADA6A72C238908D500927164 /* WordsLoaderTests.swift */; };
+		ADA6A73023891AFB00927164 /* YmlEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADA6A72F23891AFB00927164 /* YmlEntity.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		ADA6A7172389072100927164 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = ADA6A6D42388FFED00927164 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = ADA6A70C2389072100927164;
+			remoteInfo = SpellCheckerCore;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
 		ADA6A6DA2388FFED00927164 /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = /usr/share/man/man1/;
-			dstSubfolderSpec = 0;
+			buildActionMask = 12;
+			dstPath = "";
+			dstSubfolderSpec = 7;
 			files = (
+				ADA6A6F22389021A00927164 /* words.txt in CopyFiles */,
 			);
-			runOnlyForDeploymentPostprocessing = 1;
+			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		ADA6A6DC2388FFED00927164 /* SpellChecker */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = SpellChecker; sourceTree = BUILT_PRODUCTS_DIR; };
 		ADA6A6DF2388FFED00927164 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		ADA6A6E72389001200927164 /* words.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = words.txt; sourceTree = "<group>"; };
+		ADA6A6E92389002B00927164 /* WordsLoader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WordsLoader.swift; sourceTree = "<group>"; };
+		ADA6A6EC2389004500927164 /* String+extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+extension.swift"; sourceTree = "<group>"; };
+		ADA6A6F7238904CF00927164 /* Commands.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Commands.swift; sourceTree = "<group>"; };
+		ADA6A7062389066A00927164 /* CommandsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommandsTests.swift; sourceTree = "<group>"; };
+		ADA6A70D2389072100927164 /* SpellCheckerCore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SpellCheckerCore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		ADA6A70F2389072100927164 /* SpellCheckerCore.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SpellCheckerCore.h; sourceTree = "<group>"; };
+		ADA6A7102389072100927164 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ADA6A7152389072100927164 /* SpellCheckerCoreTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SpellCheckerCoreTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		ADA6A71C2389072100927164 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ADA6A72C238908D500927164 /* WordsLoaderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordsLoaderTests.swift; sourceTree = "<group>"; };
+		ADA6A72F23891AFB00927164 /* YmlEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YmlEntity.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -32,6 +66,23 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ADA6A72B2389089100927164 /* SpellCheckerCore.framework in Frameworks */,
+				ADA6A6F52389036600927164 /* Yams in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ADA6A70A2389072100927164 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ADA6A7122389072100927164 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ADA6A7162389072100927164 /* SpellCheckerCore.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,7 +93,10 @@
 			isa = PBXGroup;
 			children = (
 				ADA6A6DE2388FFED00927164 /* SpellChecker */,
+				ADA6A70E2389072100927164 /* SpellCheckerCore */,
+				ADA6A7192389072100927164 /* SpellCheckerCoreTests */,
 				ADA6A6DD2388FFED00927164 /* Products */,
+				ADA6A72A2389089100927164 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -50,6 +104,8 @@
 			isa = PBXGroup;
 			children = (
 				ADA6A6DC2388FFED00927164 /* SpellChecker */,
+				ADA6A70D2389072100927164 /* SpellCheckerCore.framework */,
+				ADA6A7152389072100927164 /* SpellCheckerCoreTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -57,12 +113,94 @@
 		ADA6A6DE2388FFED00927164 /* SpellChecker */ = {
 			isa = PBXGroup;
 			children = (
+				ADA6A6E62388FFFB00927164 /* Resources */,
 				ADA6A6DF2388FFED00927164 /* main.swift */,
 			);
 			path = SpellChecker;
 			sourceTree = "<group>";
 		};
+		ADA6A6E62388FFFB00927164 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				ADA6A6E72389001200927164 /* words.txt */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		ADA6A7052389065E00927164 /* Supports */ = {
+			isa = PBXGroup;
+			children = (
+				ADA6A7062389066A00927164 /* CommandsTests.swift */,
+				ADA6A72C238908D500927164 /* WordsLoaderTests.swift */,
+			);
+			path = Supports;
+			sourceTree = "<group>";
+		};
+		ADA6A70E2389072100927164 /* SpellCheckerCore */ = {
+			isa = PBXGroup;
+			children = (
+				ADA6A7282389080100927164 /* Extensions */,
+				ADA6A7242389072F00927164 /* Supports */,
+				ADA6A72E23890C8B00927164 /* Entity */,
+				ADA6A70F2389072100927164 /* SpellCheckerCore.h */,
+				ADA6A7102389072100927164 /* Info.plist */,
+			);
+			path = SpellCheckerCore;
+			sourceTree = "<group>";
+		};
+		ADA6A7192389072100927164 /* SpellCheckerCoreTests */ = {
+			isa = PBXGroup;
+			children = (
+				ADA6A7052389065E00927164 /* Supports */,
+				ADA6A71C2389072100927164 /* Info.plist */,
+			);
+			path = SpellCheckerCoreTests;
+			sourceTree = "<group>";
+		};
+		ADA6A7242389072F00927164 /* Supports */ = {
+			isa = PBXGroup;
+			children = (
+				ADA6A6F7238904CF00927164 /* Commands.swift */,
+				ADA6A6E92389002B00927164 /* WordsLoader.swift */,
+			);
+			path = Supports;
+			sourceTree = "<group>";
+		};
+		ADA6A7282389080100927164 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				ADA6A6EC2389004500927164 /* String+extension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		ADA6A72A2389089100927164 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		ADA6A72E23890C8B00927164 /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+				ADA6A72F23891AFB00927164 /* YmlEntity.swift */,
+			);
+			path = Entity;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		ADA6A7082389072100927164 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ADA6A71D2389072100927164 /* SpellCheckerCore.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
 		ADA6A6DB2388FFED00927164 /* SpellChecker */ = {
@@ -78,9 +216,48 @@
 			dependencies = (
 			);
 			name = SpellChecker;
+			packageProductDependencies = (
+				ADA6A6F42389036600927164 /* Yams */,
+			);
 			productName = SpellChecker;
 			productReference = ADA6A6DC2388FFED00927164 /* SpellChecker */;
 			productType = "com.apple.product-type.tool";
+		};
+		ADA6A70C2389072100927164 /* SpellCheckerCore */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = ADA6A71E2389072100927164 /* Build configuration list for PBXNativeTarget "SpellCheckerCore" */;
+			buildPhases = (
+				ADA6A7082389072100927164 /* Headers */,
+				ADA6A7092389072100927164 /* Sources */,
+				ADA6A70A2389072100927164 /* Frameworks */,
+				ADA6A70B2389072100927164 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SpellCheckerCore;
+			productName = SpellCheckerCore;
+			productReference = ADA6A70D2389072100927164 /* SpellCheckerCore.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		ADA6A7142389072100927164 /* SpellCheckerCoreTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = ADA6A7212389072100927164 /* Build configuration list for PBXNativeTarget "SpellCheckerCoreTests" */;
+			buildPhases = (
+				ADA6A7112389072100927164 /* Sources */,
+				ADA6A7122389072100927164 /* Frameworks */,
+				ADA6A7132389072100927164 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				ADA6A7182389072100927164 /* PBXTargetDependency */,
+			);
+			name = SpellCheckerCoreTests;
+			productName = SpellCheckerCoreTests;
+			productReference = ADA6A7152389072100927164 /* SpellCheckerCoreTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
 
@@ -95,6 +272,12 @@
 					ADA6A6DB2388FFED00927164 = {
 						CreatedOnToolsVersion = 11.2.1;
 					};
+					ADA6A70C2389072100927164 = {
+						CreatedOnToolsVersion = 11.2.1;
+					};
+					ADA6A7142389072100927164 = {
+						CreatedOnToolsVersion = 11.2.1;
+					};
 				};
 			};
 			buildConfigurationList = ADA6A6D72388FFED00927164 /* Build configuration list for PBXProject "SpellChecker" */;
@@ -106,14 +289,36 @@
 				Base,
 			);
 			mainGroup = ADA6A6D32388FFED00927164;
+			packageReferences = (
+				ADA6A6F32389036600927164 /* XCRemoteSwiftPackageReference "Yams" */,
+			);
 			productRefGroup = ADA6A6DD2388FFED00927164 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
 				ADA6A6DB2388FFED00927164 /* SpellChecker */,
+				ADA6A70C2389072100927164 /* SpellCheckerCore */,
+				ADA6A7142389072100927164 /* SpellCheckerCoreTests */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		ADA6A70B2389072100927164 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ADA6A7132389072100927164 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		ADA6A6D82388FFED00927164 /* Sources */ = {
@@ -124,7 +329,35 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		ADA6A7092389072100927164 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ADA6A727238907E500927164 /* WordsLoader.swift in Sources */,
+				ADA6A73023891AFB00927164 /* YmlEntity.swift in Sources */,
+				ADA6A7252389073800927164 /* Commands.swift in Sources */,
+				ADA6A7292389080A00927164 /* String+extension.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ADA6A7112389072100927164 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ADA6A72D238908D500927164 /* WordsLoaderTests.swift in Sources */,
+				ADA6A7262389074700927164 /* CommandsTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		ADA6A7182389072100927164 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = ADA6A70C2389072100927164 /* SpellCheckerCore */;
+			targetProxy = ADA6A7172389072100927164 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		ADA6A6E12388FFED00927164 /* Debug */ = {
@@ -177,7 +410,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -231,7 +464,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = macosx;
@@ -246,6 +479,8 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = K84E4S7G4C;
 				ENABLE_HARDENED_RUNTIME = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				PRODUCT_BUNDLE_IDENTIFIER = me.fromkk.SpellChecker;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 			};
@@ -257,6 +492,104 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = K84E4S7G4C;
 				ENABLE_HARDENED_RUNTIME = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				PRODUCT_BUNDLE_IDENTIFIER = me.fromkk.SpellChecker;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		ADA6A71F2389072100927164 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = K84E4S7G4C;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = SpellCheckerCore/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				PRODUCT_BUNDLE_IDENTIFIER = me.fromkk.SpellCheckerCore;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		ADA6A7202389072100927164 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = K84E4S7G4C;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = SpellCheckerCore/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				PRODUCT_BUNDLE_IDENTIFIER = me.fromkk.SpellCheckerCore;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		ADA6A7222389072100927164 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = SpellCheckerCoreTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				PRODUCT_BUNDLE_IDENTIFIER = me.fromkk.SpellCheckerCoreTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		ADA6A7232389072100927164 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = SpellCheckerCoreTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				PRODUCT_BUNDLE_IDENTIFIER = me.fromkk.SpellCheckerCoreTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 			};
@@ -283,7 +616,44 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
+		ADA6A71E2389072100927164 /* Build configuration list for PBXNativeTarget "SpellCheckerCore" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ADA6A71F2389072100927164 /* Debug */,
+				ADA6A7202389072100927164 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		ADA6A7212389072100927164 /* Build configuration list for PBXNativeTarget "SpellCheckerCoreTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ADA6A7222389072100927164 /* Debug */,
+				ADA6A7232389072100927164 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		ADA6A6F32389036600927164 /* XCRemoteSwiftPackageReference "Yams" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/jpsim/Yams.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		ADA6A6F42389036600927164 /* Yams */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = ADA6A6F32389036600927164 /* XCRemoteSwiftPackageReference "Yams" */;
+			productName = Yams;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = ADA6A6D42388FFED00927164 /* Project object */;
 }
