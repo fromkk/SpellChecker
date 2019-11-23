@@ -59,7 +59,7 @@ final class Main {
         }
 
         warnings.forEach { word in
-            print("warning: \(word.url.absoluteString):\(word.line):\(word.position) \(word.value) is typo?")
+            print("\(word.url.absoluteString):\(word.line + 1):\(word.position + 1): warning: Is `\(word.value)` typo?")
         }
     }
 
