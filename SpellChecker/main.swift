@@ -13,6 +13,11 @@ final class Main {
     }
 
     func run() throws {
+        if Commands.has("h") || Commands.has("help") {
+            help()
+            return
+        }
+
         guard let txtURL = txtURL else {
             throw SpellCheckerError.txtURLGetFailed
         }
@@ -50,13 +55,23 @@ final class Main {
 
         guard warnings.count != 0 else {
             print("no typo!")
-            exit(0)
+            return
         }
 
         warnings.forEach { word in
             print("warning: \(word.url.absoluteString):\(word.line):\(word.position) \(word.value) is typo?")
         }
-        exit(0)
+    }
+
+    func help() {
+        let help = """
+Usage: SpellChecker [-yml <YAML file path>] -- <check file path list...>
+
+Options:
+  -yml: White list YAML file
+  --  : Typo check list of file path
+"""
+        print(help)
     }
 
     func options(for url: URL) throws -> YmlEntity {
@@ -73,6 +88,7 @@ final class Main {
 let main = Main()
 do {
     try main.run()
+    exit(0)
 } catch {
     print("something wrong... \(error)")
     exit(1)
