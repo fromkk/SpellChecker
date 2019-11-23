@@ -59,6 +59,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		AD1895A22389776200F6CC72 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		ADA6A6DC2388FFED00927164 /* SpellChecker */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = SpellChecker; sourceTree = BUILT_PRODUCTS_DIR; };
 		ADA6A6DF2388FFED00927164 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		ADA6A6E72389001200927164 /* words.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = words.txt; sourceTree = "<group>"; };
@@ -108,6 +109,7 @@
 		ADA6A6D32388FFED00927164 = {
 			isa = PBXGroup;
 			children = (
+				AD1895A22389776200F6CC72 /* README.md */,
 				ADA6A6DE2388FFED00927164 /* SpellChecker */,
 				ADA6A70E2389072100927164 /* SpellCheckerCore */,
 				ADA6A7192389072100927164 /* SpellCheckerCoreTests */,

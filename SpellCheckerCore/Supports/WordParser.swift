@@ -64,7 +64,7 @@ struct WordFinder {
                         word = ""
                         word.append(contentsOf: char)
                     }
-                } else {
+                } else if char.hasLowerCase() {
                     // 小文字
                     word.append(contentsOf: char)
                 }
