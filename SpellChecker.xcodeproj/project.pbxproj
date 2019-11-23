@@ -16,11 +16,12 @@
 		ADA6A7262389074700927164 /* CommandsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADA6A7062389066A00927164 /* CommandsTests.swift */; };
 		ADA6A727238907E500927164 /* WordsLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADA6A6E92389002B00927164 /* WordsLoader.swift */; };
 		ADA6A7292389080A00927164 /* String+extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADA6A6EC2389004500927164 /* String+extension.swift */; };
-		ADA6A72B2389089100927164 /* SpellCheckerCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ADA6A70D2389072100927164 /* SpellCheckerCore.framework */; };
 		ADA6A72D238908D500927164 /* WordsLoaderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADA6A72C238908D500927164 /* WordsLoaderTests.swift */; };
 		ADA6A73023891AFB00927164 /* YmlEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADA6A72F23891AFB00927164 /* YmlEntity.swift */; };
 		ADA6A7322389205B00927164 /* WordParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADA6A7312389205B00927164 /* WordParser.swift */; };
 		ADA6A73423892A0B00927164 /* WordFinderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADA6A73323892A0B00927164 /* WordFinderTests.swift */; };
+		ADA6A73523893BCC00927164 /* SpellCheckerCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ADA6A70D2389072100927164 /* SpellCheckerCore.framework */; };
+		ADA6A73623893BCC00927164 /* SpellCheckerCore.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = ADA6A70D2389072100927164 /* SpellCheckerCore.framework */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,6 +43,17 @@
 			files = (
 				ADA6A6F22389021A00927164 /* words.txt in CopyFiles */,
 			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ADA6A73723893BCC00927164 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				ADA6A73623893BCC00927164 /* SpellCheckerCore.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXCopyFilesBuildPhase section */
@@ -70,7 +82,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				ADA6A72B2389089100927164 /* SpellCheckerCore.framework in Frameworks */,
+				ADA6A73523893BCC00927164 /* SpellCheckerCore.framework in Frameworks */,
 				ADA6A6F52389036600927164 /* Yams in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -216,6 +228,7 @@
 				ADA6A6D82388FFED00927164 /* Sources */,
 				ADA6A6D92388FFED00927164 /* Frameworks */,
 				ADA6A6DA2388FFED00927164 /* CopyFiles */,
+				ADA6A73723893BCC00927164 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
