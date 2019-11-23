@@ -12,7 +12,7 @@ struct LineParser {
     let url: URL
     func parse() -> [WordParser.Word] {
         var result: [WordParser.Word] = []
-        let lines = string.split(separator: "\n")
+        let lines = string.split(separator: "\n", omittingEmptySubsequences: false)
         lines.enumerated().forEach { offset, line in
             let wordFinder = WordFinder(string: String(line), url: url, line: offset)
             result.append(contentsOf: wordFinder.find())
@@ -54,8 +54,7 @@ struct WordFinder {
                 }
             } else {
                 if char.hasNumber() {
-                    // 数字
-                    word.append(contentsOf: char)
+                    // nothing todo
                 } else if char.hasUpperCase() {
                     // 大文字
                     if word.isEmpty {
