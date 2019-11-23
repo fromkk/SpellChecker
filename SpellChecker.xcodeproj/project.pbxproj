@@ -19,6 +19,7 @@
 		ADA6A72B2389089100927164 /* SpellCheckerCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ADA6A70D2389072100927164 /* SpellCheckerCore.framework */; };
 		ADA6A72D238908D500927164 /* WordsLoaderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADA6A72C238908D500927164 /* WordsLoaderTests.swift */; };
 		ADA6A73023891AFB00927164 /* YmlEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADA6A72F23891AFB00927164 /* YmlEntity.swift */; };
+		ADA6A7322389205B00927164 /* WordParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADA6A7312389205B00927164 /* WordParser.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,6 +60,7 @@
 		ADA6A71C2389072100927164 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		ADA6A72C238908D500927164 /* WordsLoaderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordsLoaderTests.swift; sourceTree = "<group>"; };
 		ADA6A72F23891AFB00927164 /* YmlEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YmlEntity.swift; sourceTree = "<group>"; };
+		ADA6A7312389205B00927164 /* WordParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordParser.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -162,6 +164,7 @@
 			children = (
 				ADA6A6F7238904CF00927164 /* Commands.swift */,
 				ADA6A6E92389002B00927164 /* WordsLoader.swift */,
+				ADA6A7312389205B00927164 /* WordParser.swift */,
 			);
 			path = Supports;
 			sourceTree = "<group>";
@@ -336,6 +339,7 @@
 				ADA6A727238907E500927164 /* WordsLoader.swift in Sources */,
 				ADA6A73023891AFB00927164 /* YmlEntity.swift in Sources */,
 				ADA6A7252389073800927164 /* Commands.swift in Sources */,
+				ADA6A7322389205B00927164 /* WordParser.swift in Sources */,
 				ADA6A7292389080A00927164 /* String+extension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
