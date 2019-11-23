@@ -20,6 +20,7 @@
 		ADA6A72D238908D500927164 /* WordsLoaderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADA6A72C238908D500927164 /* WordsLoaderTests.swift */; };
 		ADA6A73023891AFB00927164 /* YmlEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADA6A72F23891AFB00927164 /* YmlEntity.swift */; };
 		ADA6A7322389205B00927164 /* WordParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADA6A7312389205B00927164 /* WordParser.swift */; };
+		ADA6A73423892A0B00927164 /* WordFinderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADA6A73323892A0B00927164 /* WordFinderTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,6 +62,7 @@
 		ADA6A72C238908D500927164 /* WordsLoaderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordsLoaderTests.swift; sourceTree = "<group>"; };
 		ADA6A72F23891AFB00927164 /* YmlEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YmlEntity.swift; sourceTree = "<group>"; };
 		ADA6A7312389205B00927164 /* WordParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordParser.swift; sourceTree = "<group>"; };
+		ADA6A73323892A0B00927164 /* WordFinderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordFinderTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -134,6 +136,7 @@
 			children = (
 				ADA6A7062389066A00927164 /* CommandsTests.swift */,
 				ADA6A72C238908D500927164 /* WordsLoaderTests.swift */,
+				ADA6A73323892A0B00927164 /* WordFinderTests.swift */,
 			);
 			path = Supports;
 			sourceTree = "<group>";
@@ -348,6 +351,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ADA6A73423892A0B00927164 /* WordFinderTests.swift in Sources */,
 				ADA6A72D238908D500927164 /* WordsLoaderTests.swift in Sources */,
 				ADA6A7262389074700927164 /* CommandsTests.swift in Sources */,
 			);
