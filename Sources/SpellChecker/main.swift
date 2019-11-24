@@ -64,7 +64,7 @@ final class Main {
 
         warnings.forEach { word in
             if let suggestion = word.suggestion {
-                print("\(word.url.path):\(word.line + 1):\(word.position + 1): warning: Did you mean `\(suggestion)` ? (SpellChecker)")
+                print("\(word.url.path):\(word.line + 1):\(word.position + 1): warning: Maybe `\(word.value)` is typo of `\(suggestion)`. (SpellChecker)")
             } else {
                 print("\(word.url.path):\(word.line + 1):\(word.position + 1): warning: Is `\(word.value)` typo? (SpellChecker)")
             }
