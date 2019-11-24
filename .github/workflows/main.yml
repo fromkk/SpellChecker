@@ -8,5 +8,4 @@ jobs:
     steps:
     - uses: actions/checkout@v1
     - name: execute Test
-      run: |
-        xcodebuild -project SpellChecker.xcodeproj -scheme SpellChecker test
+      run: codebuild -project SpellChecker.xcodeproj -scheme SpellChecker test
