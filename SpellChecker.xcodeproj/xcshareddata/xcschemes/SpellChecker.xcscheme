@@ -20,6 +20,34 @@
                ReferencedContainer = "container:SpellChecker.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
+         <BuildActionEntry
+            buildForTesting = "YES"
+            buildForRunning = "YES"
+            buildForProfiling = "YES"
+            buildForArchiving = "YES"
+            buildForAnalyzing = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "ADA6A70C2389072100927164"
+               BuildableName = "SpellCheckerCore.framework"
+               BlueprintName = "SpellCheckerCore"
+               ReferencedContainer = "container:SpellChecker.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
+         <BuildActionEntry
+            buildForTesting = "YES"
+            buildForRunning = "NO"
+            buildForProfiling = "NO"
+            buildForArchiving = "NO"
+            buildForAnalyzing = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "ADA6A7142389072100927164"
+               BuildableName = "SpellCheckerCoreTests.xctest"
+               BlueprintName = "SpellCheckerCoreTests"
+               ReferencedContainer = "container:SpellChecker.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
       </BuildActionEntries>
    </BuildAction>
    <TestAction
@@ -32,9 +60,9 @@
             skipped = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "ADA6A6FC2389062800927164"
-               BuildableName = "SpellCheckerTests.xctest"
-               BlueprintName = "SpellCheckerTests"
+               BlueprintIdentifier = "ADA6A7142389072100927164"
+               BuildableName = "SpellCheckerCoreTests.xctest"
+               BlueprintName = "SpellCheckerCoreTests"
                ReferencedContainer = "container:SpellChecker.xcodeproj">
             </BuildableReference>
          </TestableReference>
