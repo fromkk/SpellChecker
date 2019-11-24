@@ -1,0 +1,12 @@
+name: CI
+
+on: [push]
+
+jobs:
+  build:
+    runs-on: macOS-latest
+    steps:
+    - uses: actions/checkout@v1
+    - name: execute Test
+      run: |
+        xcodebuild -project SpellChecker.xcodeproj -scheme SpellChecker test
