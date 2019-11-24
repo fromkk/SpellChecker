@@ -9,10 +9,6 @@ final class Main {
         case unsupportedLanguage(String)
     }
 
-    private var txtURL: URL? {
-        return Bundle.main.url(forAuxiliaryExecutable: "words.txt")
-    }
-
     func run() throws {
         if Commands.has("h") || Commands.has("help") {
             help()
