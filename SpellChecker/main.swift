@@ -1,11 +1,12 @@
 import SpellCheckerCore
 import Foundation
 import Yams
+import Cocoa
 
 final class Main {
     enum SpellCheckerError: Error {
-        case txtURLGetFailed
         case filesNotFound
+        case unsupportedLanguage(String)
     }
 
     private var txtURL: URL? {
@@ -18,32 +19,39 @@ final class Main {
             return
         }
 
-        guard let txtURL = txtURL else {
-            throw SpellCheckerError.txtURLGetFailed
-        }
-
         let files = Commands.array()
         guard !files.isEmpty else {
             throw SpellCheckerError.filesNotFound
         }
 
-        var dictionary = try WordsLoader.load(from: txtURL)
+        let spellChecker = NSSpellChecker.shared
+
         if let ymlPath = Commands.value(of: "yml") {
             let url = URL(fileURLWithPath: ymlPath)
             let entity = try options(for: url)
             if let whiteList = entity.whiteList, !whiteList.isEmpty {
-                dictionary.merge(whiteList.reduce(into: [:], { $0[$1] = true }), uniquingKeysWith: { $1 })
+                spellChecker.setIgnoredWords(whiteList, inSpellDocumentWithTag: 0)
             }
         }
+        
+        let language = Commands.value(of: "language") ?? "en"
+        if !spellChecker.setLanguage(language) {
+            throw SpellCheckerError.unsupportedLanguage(language)
+        }
 
-        var warnings: [WordParser.Word] = []
+        var warnings: [WordEntity] = []
         files.forEach { file in
             let url = URL(fileURLWithPath: file)
             let wordParser = WordParser(url: url)
             do {
                 let words = try wordParser.parse()
                 words.forEach { word in
-                    if !(dictionary[word.value] ?? false) {
+                    var word = word
+                    let range = spellChecker.checkSpelling(of: word.value, startingAt: 0)
+                    if range.location < word.value.count {
+                        if let suggest = spellChecker.correction(forWordRange: range, in: word.value, language: language, inSpellDocumentWithTag: 0) {
+                            word.suggestion = suggest
+                        }
                         warnings.append(word)
                     }
                 }
@@ -59,7 +67,11 @@ final class Main {
         }
 
         warnings.forEach { word in
-            print("\(word.url.path):\(word.line + 1):\(word.position + 1): warning: Is `\(word.value)` typo?")
+            if let suggestion = word.suggestion {
+                print("\(word.url.path):\(word.line + 1):\(word.position + 1): warning: Did you mean `\(suggestion)` ? (SpellChecker)")
+            } else {
+                print("\(word.url.path):\(word.line + 1):\(word.position + 1): warning: Is `\(word.value)` typo? (SpellChecker)")
+            }
         }
     }
 

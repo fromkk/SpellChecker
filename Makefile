@@ -9,7 +9,6 @@ XCODEFLAGS=-project '$(PROJECT_NAME)' -scheme '$(SCHEME_NAME)' DSTROOT=$(TEMPORA
 BINARIES_FOLDER=/usr/local/bin
 BINARY_PATH=$(BINARIES_FOLDER)/$(PRODUCT_NAME)
 FRAMEWORK_PATH=$(BINARIES_FOLDER)/$(PRODUCT_NAME)Core.framework
-WORD_PATH=$(BINARIES_FOLDER)/words.txt
 
 .PHONY: all clean install uninstall
 
@@ -29,4 +28,3 @@ install: clean
 uninstall:
 	rm -rf "$(BINARY_PATH)"
 	rm -rf "$(FRAMEWORK_PATH)"
-	rm -rf "$(WORD_PATH)"

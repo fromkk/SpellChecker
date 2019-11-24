@@ -10,8 +10,8 @@ struct FileLoader {
 struct LineParser {
     let string: String
     let url: URL
-    func parse() -> [WordParser.Word] {
-        var result: [WordParser.Word] = []
+    func parse() -> [WordEntity] {
+        var result: [WordEntity] = []
         let lines = string.split(separator: "\n", omittingEmptySubsequences: false)
         lines.enumerated().forEach { offset, line in
             let wordFinder = WordFinder(string: String(line), url: url, line: offset)
@@ -25,8 +25,8 @@ struct WordFinder {
     let string: String
     let url: URL
     let line: Int
-    func find() -> [WordParser.Word] {
-        var result: [WordParser.Word] = []
+    func find() -> [WordEntity] {
+        var result: [WordEntity] = []
         var loop: Int = 0
         var word = ""
         let characterSet = CharacterSet.alphanumerics
@@ -78,19 +78,12 @@ struct WordFinder {
 }
 
 public struct WordParser {
-    public struct Word: Equatable {
-        public let url: URL
-        public let line: Int
-        public let position: Int
-        public let value: String
-    }
-
     public let url: URL
     public init(url: URL) {
         self.url = url
     }
 
-    public func parse() throws -> [Word] {
+    public func parse() throws -> [WordEntity] {
         let loader = FileLoader(url: url)
         let string = try loader.load()
         let parser = LineParser(string: string, url: url)

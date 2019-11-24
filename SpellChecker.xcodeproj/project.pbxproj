@@ -7,8 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AD4D7878238A37F80080A3AA /* WordEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD4D7877238A37F80080A3AA /* WordEntity.swift */; };
 		ADA6A6E02388FFED00927164 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADA6A6DF2388FFED00927164 /* main.swift */; };
-		ADA6A6F22389021A00927164 /* words.txt in CopyFiles */ = {isa = PBXBuildFile; fileRef = ADA6A6E72389001200927164 /* words.txt */; };
 		ADA6A6F52389036600927164 /* Yams in Frameworks */ = {isa = PBXBuildFile; productRef = ADA6A6F42389036600927164 /* Yams */; };
 		ADA6A7162389072100927164 /* SpellCheckerCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ADA6A70D2389072100927164 /* SpellCheckerCore.framework */; };
 		ADA6A71D2389072100927164 /* SpellCheckerCore.h in Headers */ = {isa = PBXBuildFile; fileRef = ADA6A70F2389072100927164 /* SpellCheckerCore.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -41,7 +41,6 @@
 			dstPath = "";
 			dstSubfolderSpec = 7;
 			files = (
-				ADA6A6F22389021A00927164 /* words.txt in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -60,9 +59,9 @@
 
 /* Begin PBXFileReference section */
 		AD1895A22389776200F6CC72 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		AD4D7877238A37F80080A3AA /* WordEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordEntity.swift; sourceTree = "<group>"; };
 		ADA6A6DC2388FFED00927164 /* SpellChecker */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = SpellChecker; sourceTree = BUILT_PRODUCTS_DIR; };
 		ADA6A6DF2388FFED00927164 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
-		ADA6A6E72389001200927164 /* words.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = words.txt; sourceTree = "<group>"; };
 		ADA6A6E92389002B00927164 /* WordsLoader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WordsLoader.swift; sourceTree = "<group>"; };
 		ADA6A6EC2389004500927164 /* String+extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+extension.swift"; sourceTree = "<group>"; };
 		ADA6A6F7238904CF00927164 /* Commands.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Commands.swift; sourceTree = "<group>"; };
@@ -131,18 +130,9 @@
 		ADA6A6DE2388FFED00927164 /* SpellChecker */ = {
 			isa = PBXGroup;
 			children = (
-				ADA6A6E62388FFFB00927164 /* Resources */,
 				ADA6A6DF2388FFED00927164 /* main.swift */,
 			);
 			path = SpellChecker;
-			sourceTree = "<group>";
-		};
-		ADA6A6E62388FFFB00927164 /* Resources */ = {
-			isa = PBXGroup;
-			children = (
-				ADA6A6E72389001200927164 /* words.txt */,
-			);
-			path = Resources;
 			sourceTree = "<group>";
 		};
 		ADA6A7052389065E00927164 /* Supports */ = {
@@ -205,6 +195,7 @@
 			isa = PBXGroup;
 			children = (
 				ADA6A72F23891AFB00927164 /* YmlEntity.swift */,
+				AD4D7877238A37F80080A3AA /* WordEntity.swift */,
 			);
 			path = Entity;
 			sourceTree = "<group>";
@@ -354,6 +345,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AD4D7878238A37F80080A3AA /* WordEntity.swift in Sources */,
 				ADA6A727238907E500927164 /* WordsLoader.swift in Sources */,
 				ADA6A73023891AFB00927164 /* YmlEntity.swift in Sources */,
 				ADA6A7252389073800927164 /* Commands.swift in Sources */,
