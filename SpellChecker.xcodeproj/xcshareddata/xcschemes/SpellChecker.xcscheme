@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Scheme
-   LastUpgradeVersion = "1120"
+   LastUpgradeVersion = "9999"
    version = "1.3">
    <BuildAction
       parallelizeBuildables = "YES"
@@ -14,37 +14,9 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "ADA6A6DB2388FFED00927164"
+               BlueprintIdentifier = "SpellChecker::SpellChecker"
                BuildableName = "SpellChecker"
                BlueprintName = "SpellChecker"
-               ReferencedContainer = "container:SpellChecker.xcodeproj">
-            </BuildableReference>
-         </BuildActionEntry>
-         <BuildActionEntry
-            buildForTesting = "YES"
-            buildForRunning = "YES"
-            buildForProfiling = "YES"
-            buildForArchiving = "YES"
-            buildForAnalyzing = "YES">
-            <BuildableReference
-               BuildableIdentifier = "primary"
-               BlueprintIdentifier = "ADA6A70C2389072100927164"
-               BuildableName = "SpellCheckerCore.framework"
-               BlueprintName = "SpellCheckerCore"
-               ReferencedContainer = "container:SpellChecker.xcodeproj">
-            </BuildableReference>
-         </BuildActionEntry>
-         <BuildActionEntry
-            buildForTesting = "YES"
-            buildForRunning = "NO"
-            buildForProfiling = "NO"
-            buildForArchiving = "NO"
-            buildForAnalyzing = "NO">
-            <BuildableReference
-               BuildableIdentifier = "primary"
-               BlueprintIdentifier = "ADA6A7142389072100927164"
-               BuildableName = "SpellCheckerCoreTests.xctest"
-               BlueprintName = "SpellCheckerCoreTests"
                ReferencedContainer = "container:SpellChecker.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -60,7 +32,7 @@
             skipped = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "ADA6A7142389072100927164"
+               BlueprintIdentifier = "SpellChecker::SpellCheckerCoreTests"
                BuildableName = "SpellCheckerCoreTests.xctest"
                BlueprintName = "SpellCheckerCoreTests"
                ReferencedContainer = "container:SpellChecker.xcodeproj">
@@ -82,7 +54,7 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "ADA6A6DB2388FFED00927164"
+            BlueprintIdentifier = "SpellChecker::SpellChecker"
             BuildableName = "SpellChecker"
             BlueprintName = "SpellChecker"
             ReferencedContainer = "container:SpellChecker.xcodeproj">
@@ -95,16 +67,6 @@
       savedToolIdentifier = ""
       useCustomWorkingDirectory = "NO"
       debugDocumentVersioning = "YES">
-      <BuildableProductRunnable
-         runnableDebuggingMode = "0">
-         <BuildableReference
-            BuildableIdentifier = "primary"
-            BlueprintIdentifier = "ADA6A6DB2388FFED00927164"
-            BuildableName = "SpellChecker"
-            BlueprintName = "SpellChecker"
-            ReferencedContainer = "container:SpellChecker.xcodeproj">
-         </BuildableReference>
-      </BuildableProductRunnable>
    </ProfileAction>
    <AnalyzeAction
       buildConfiguration = "Debug">

@@ -19,4 +19,10 @@ final class CommandsTests: XCTestCase {
     func testArray() {
         XCTAssertEqual(Commands.array(), ["a.txt", "b.txt"])
     }
+
+    static var allTests = [
+        ("testHasOption", testHasOption),
+        ("testValue", testValue),
+        ("testArray", testArray)
+    ]
 }
