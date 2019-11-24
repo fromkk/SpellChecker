@@ -39,7 +39,7 @@ final class WordFinderTests: XCTestCase {
     func testNumber() {
         let wordFinder = WordFinder(string: " abc1DefGhi ", url: URL(string: "https://example.com/")!, line: 10)
         XCTAssertEqual(wordFinder.find(), [
-            WordParser.Word(url: URL(string: "https://example.com/")!, line: 10, position: 1, value: "abc1"),
+            WordParser.Word(url: URL(string: "https://example.com/")!, line: 10, position: 1, value: "abc"),
             WordParser.Word(url: URL(string: "https://example.com/")!, line: 10, position: 5, value: "def"),
             WordParser.Word(url: URL(string: "https://example.com/")!, line: 10, position: 8, value: "ghi")
         ])
