@@ -55,7 +55,7 @@ whiteList:
   - fromkk
 ```
 
-And set `--yml` options.
+And set `-yml` options.
 
 ```shellscript
 /usr/local/bin/SpellChecker -yml $SRCROOT/swift-keywords.yaml -- $options
