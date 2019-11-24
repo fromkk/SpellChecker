@@ -4,7 +4,7 @@ TEMPORARY_FOLDER=/tmp/$(SCHEME_NAME)/.dst
 BINARIES_FOLDER=/usr/local/bin
 BINARY_PATH=$(BINARIES_FOLDER)/$(PRODUCT_NAME)
 
-.PHONY: build clean install uninstall test
+.PHONY: build clean install uninstall test xcode
 
 build:
 	swift build --disable-sandbox -c release
@@ -21,4 +21,7 @@ uninstall:
 
 test: clean
 	swift test
+
+xcode:
+	swift package generate-xcodeproj
 
