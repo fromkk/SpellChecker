@@ -9,7 +9,7 @@ jobs:
 
     steps:
     - uses: actions/checkout@v1
-    - name: Show Xcode version
-      run: xcodebuild -version
-    - name: Build
-      run: make test
+    - name: Hello world
+      run: echo "Hello world"
+    - name: Xcode list
+      run: ls /Applications
