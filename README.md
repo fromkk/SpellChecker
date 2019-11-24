@@ -1,5 +1,7 @@
 #  SpellChecker for Xcode
 
+![screenshot](./images/screenshot.png)
+
 ## Recommended environment
 
 - Swift 5.1
@@ -26,7 +28,8 @@ fi
 
 git_path=/usr/local/bin/git
 files=$($git_path diff --name-only -- "*.swift" "*.h" "*.m")
-if [ ${#files[@]} -eq 0 ]; then
+if (test -z $files) || (test ${#files[@]} -eq 0); then
+  echo "no files changed."
   exit 0
 fi
 
@@ -36,6 +39,24 @@ do
   options="$options $SRCROOT/$file"
 done
 
-/usr/local/bin/SpellChecker -yml $SRCROOT/swift-keywords.yaml -- $options
+/usr/local/bin/SpellChecker -- $options
 
+```
+
+### Whitelist
+
+If you want ignore some warnings, make YAML file to your directory.  
+For example:
+
+```yaml
+whiteList:
+  - kazuya
+  - ueoka
+  - fromkk
+```
+
+And set `--yml` options.
+
+```shellscript
+/usr/local/bin/SpellChecker -yml $SRCROOT/swift-keywords.yaml -- $options
 ```
