@@ -10,7 +10,7 @@ BINARIES_FOLDER=/usr/local/bin
 BINARY_PATH=$(BINARIES_FOLDER)/$(PRODUCT_NAME)
 FRAMEWORK_PATH=$(BINARIES_FOLDER)/$(PRODUCT_NAME)Core.framework
 
-.PHONY: all clean install uninstall
+.PHONY: all clean install uninstall test
 
 all:
 	xcodebuild $(XCODEFLAGS) build
@@ -28,3 +28,7 @@ install: clean
 uninstall:
 	rm -rf "$(BINARY_PATH)"
 	rm -rf "$(FRAMEWORK_PATH)"
+
+test: clean
+	xcodebuild $(XCODEFLAGS) test
+

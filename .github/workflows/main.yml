@@ -4,8 +4,12 @@ on: [push]
 
 jobs:
   build:
-    runs-on: macOS-latest
+
+    runs-on: macos-latest
+
     steps:
     - uses: actions/checkout@v1
-    - name: execute Test
-      run: codebuild -project SpellChecker.xcodeproj -scheme SpellChecker test
+    - name: Show Xcode version
+      run: xcodebuild -version
+    - name: Build
+      run: make test
