@@ -6,4 +6,8 @@ final class WordsLoaderTests: XCTestCase {
         let string = "ab.c\ndefg-hijk\nLmn"
         XCTAssertEqual(["abc": true, "defghijk": true, "lmn": true], WordsLoader.dictionary(from: string))
     }
+
+    static var allTests = [
+        ("testDictinoary", testDictinoary)
+    ]
 }

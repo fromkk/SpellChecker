@@ -1,5 +1,5 @@
-@testable import SpellCheckerCore
 import XCTest
+@testable import SpellCheckerCore
 
 final class WordFinderTests: XCTestCase {
     func testEmpty() {
@@ -44,4 +44,13 @@ final class WordFinderTests: XCTestCase {
             WordEntity(url: URL(string: "https://example.com/")!, line: 10, position: 8, value: "ghi")
         ])
     }
+
+    static var allTests = [
+        ("testEmpty", testEmpty),
+        ("testSpace", testSpace),
+        ("testAlnum", testAlnum),
+        ("testSnakeCase", testSnakeCase),
+        ("testCamelCase", testCamelCase),
+        ("testNumber", testNumber)
+    ]
 }

@@ -1,34 +1,24 @@
 PRODUCT_NAME=SpellChecker
 SCHEME_NAME=SpellChecker
-PROJECT_NAME=SpellChecker.xcodeproj
-
 TEMPORARY_FOLDER=/tmp/$(SCHEME_NAME)/.dst
-
-XCODEFLAGS=-project '$(PROJECT_NAME)' -scheme '$(SCHEME_NAME)' DSTROOT=$(TEMPORARY_FOLDER)
-
 BINARIES_FOLDER=/usr/local/bin
 BINARY_PATH=$(BINARIES_FOLDER)/$(PRODUCT_NAME)
-FRAMEWORK_PATH=$(BINARIES_FOLDER)/$(PRODUCT_NAME)Core.framework
 
-.PHONY: all clean install uninstall test
+.PHONY: build clean install uninstall test
 
-all:
-	xcodebuild $(XCODEFLAGS) build
+build:
+	swift build --disable-sandbox -c release
 
 clean:
-	rm -rf "$(TEMPORARY_FOLDER)"
-	xcodebuild $(XCODEFLAGS) clean
+	swift package clean
 
-install: clean
-	mkdir -p $(TEMPORARY_FOLDER)
-	xcodebuild $(XCODEFLAGS) install
-	cp -R $(TEMPORARY_FOLDER)$(BINARIES_FOLDER)/* $(BINARIES_FOLDER)/
-	rm -rf "$(TEMPORARY_FOLDER)"
+install: clean build
+	mkdir -p "$(BINARIES_FOLDER)"
+	cp -f ".build/release/SpellChecker" "$(BINARY_PATH)"
 
 uninstall:
 	rm -rf "$(BINARY_PATH)"
-	rm -rf "$(FRAMEWORK_PATH)"
 
 test: clean
-	xcodebuild $(XCODEFLAGS) test
+	swift test
 
