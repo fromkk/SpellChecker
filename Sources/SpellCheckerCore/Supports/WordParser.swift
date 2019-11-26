@@ -29,7 +29,6 @@ struct WordFinder {
         var result: [WordEntity] = []
         var loop: Int = 0
         var word = ""
-        let characterSet = CharacterSet.alphanumerics
         var lastChar: Substring?
 
         func add(_ appendWord: String, position: Int) {
@@ -49,24 +48,19 @@ struct WordFinder {
                 lastChar = char
             }
 
-            if char.rangeOfCharacter(from: characterSet) == nil {
-                // 半角英数字以外
-                add(word, position: position)
-            } else {
-                if char.hasNumber() {
+            if char.hasUpperCase() {
+                // upper cases
+                if word.isEmpty {
+                    word.append(contentsOf: char)
+                } else {
                     add(word, position: position)
-                } else if char.hasUpperCase() {
-                    // 大文字
-                    if word.isEmpty {
-                        word.append(contentsOf: char)
-                    } else {
-                        add(word, position: position)
-                        word.append(contentsOf: char)
-                    }
-                } else if char.hasLowerCase() {
-                    // 小文字
                     word.append(contentsOf: char)
                 }
+            } else if char.hasLowerCase() {
+                // lower cases
+                word.append(contentsOf: char)
+            } else if !word.isEmpty {
+                add(word, position: position)
             }
 
             if loop == string.count - 1, !word.isEmpty {
