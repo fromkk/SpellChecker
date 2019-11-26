@@ -1,5 +1,9 @@
 #  SpellChecker for Xcode
 
+![GitHub Actions](https://github.com/fromkk/SpellChecker/workflows/CI/badge.svg)
+![LICENSE](https://img.shields.io/github/license/fromkk/SpellChecker)
+![Tag](https://img.shields.io/github/v/tag/fromkk/SpellChecker)
+
 ![screenshot](./images/screenshot.png)
 
 ## Recommended environment
