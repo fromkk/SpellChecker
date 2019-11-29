@@ -31,7 +31,7 @@ if ! [ -f /usr/local/bin/SpellChecker ]; then
 fi
 
 git_path=/usr/local/bin/git
-files=$($git_path diff --name-only -- "*.swift" "*.h" "*.m")
+files=$($git_path diff --diff-filter=A --diff-filter=M --name-only -- "*.swift" "*.h" "*.m")
 if (test -z $files) || (test ${#files[@]} -eq 0); then
   echo "no files changed."
   exit 0
