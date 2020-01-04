@@ -77,7 +77,7 @@ Usage: SpellChecker [--yml <YAML file path>] -- <check file path list...>
 
 Options:
   --yml: White list YAML file
-  --  : Typo check list of file path
+  --   : Typo check list of file path
 """
         print(help)
     }
