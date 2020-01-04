@@ -14,6 +14,14 @@
 
 ## Install
 
+### Mint
+
+```shllscript
+mint install fromkk/SpellChecker@0.0.3 SpellChecker
+```
+
+### Manual
+
 ```shellscript
 git clone git@github.com:fromkk/SpellChecker.git
 cd ./SpellChecker
