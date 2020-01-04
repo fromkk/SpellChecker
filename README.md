@@ -14,6 +14,14 @@
 
 ## Install
 
+### Mint
+
+```shllscript
+mint install fromkk/SpellChecker@0.0.3 SpellChecker
+```
+
+### Manual
+
 ```shellscript
 git clone git@github.com:fromkk/SpellChecker.git
 cd ./SpellChecker
@@ -59,8 +67,9 @@ whiteList:
   - fromkk
 ```
 
-And set `-yml` options.
+And set `--yml` options.
 
 ```shellscript
-/usr/local/bin/SpellChecker -yml $SRCROOT/swift-keywords.yaml -- $options
+/usr/local/bin/SpellChecker --yml $SRCROOT/swift-keywords.yaml -- $options
 ```
+

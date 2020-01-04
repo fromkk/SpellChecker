@@ -5,6 +5,9 @@ import PackageDescription
 
 let package = Package(
     name: "SpellChecker",
+    products: [
+        .executable(name: "SpellChecker", targets: ["SpellChecker"])
+    ],
     dependencies: [
         .package(url: "https://github.com/jpsim/Yams.git", from: "2.0.0")
     ],
