@@ -4,7 +4,7 @@ import XCTest
 final class CommandsTests: XCTestCase {
     override func setUp() {
         super.setUp()
-        Commands.arguments = ["Commands", "-a", "hello", "--", "a.txt", "b.txt"]
+        Commands.arguments = ["Commands", "--a", "hello", "--", "a.txt", "b.txt"]
     }
     
     func testHasOption() {
