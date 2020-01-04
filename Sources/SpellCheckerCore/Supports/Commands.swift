@@ -2,7 +2,7 @@ import Foundation
 
 public struct Commands {
     static var arguments: [String] = CommandLine.arguments
-    static var prefix: String = "-"
+    static var prefix: String = "--"
     static var arraySeparator: String = "--"
     public static func has(_ option: String) -> Bool {
         let rawValue = prefix + option
