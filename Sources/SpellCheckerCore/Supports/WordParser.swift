@@ -29,7 +29,6 @@ struct WordFinder {
         var result: [WordEntity] = []
         var loop: Int = 0
         var word = ""
-        var lastChar: Substring?
 
         func add(_ appendWord: String, position: Int) {
             if !appendWord.isEmpty {
@@ -45,7 +44,6 @@ struct WordFinder {
             let position = loop - word.count
             defer {
                 loop += 1
-                lastChar = char
             }
 
             if char.hasUpperCase() {
