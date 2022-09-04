@@ -9,7 +9,7 @@ let package = Package(
         .executable(name: "SpellChecker", targets: ["SpellChecker"])
     ],
     dependencies: [
-        .package(url: "https://github.com/jpsim/Yams.git", from: "4.0.2")
+        .package(url: "https://github.com/jpsim/Yams.git", from: "5.0.1")
     ],
     targets: [
         .target(
