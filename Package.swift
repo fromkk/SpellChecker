@@ -1,4 +1,4 @@
-// swift-tools-version:5.1
+// swift-tools-version:5.6
 // The swift-tools-version declares the minimum version of Swift required to build this package.
 
 import PackageDescription
@@ -9,10 +9,10 @@ let package = Package(
         .executable(name: "SpellChecker", targets: ["SpellChecker"])
     ],
     dependencies: [
-        .package(url: "https://github.com/jpsim/Yams.git", from: "4.0.2")
+        .package(url: "https://github.com/jpsim/Yams.git", from: "5.0.1")
     ],
     targets: [
-        .target(
+        .executableTarget(
             name: "SpellChecker",
             dependencies: ["SpellCheckerCore", "Yams"]),
         .target(

@@ -8,9 +8,9 @@
 
 ## Recommended environment
 
-- Swift 5.1
-- Xcode 11.2.1
-- macOS 10.15
+- Swift 5.6+
+- Xcode 13.3+
+- macOS 12.3+
 
 ## Install
 
